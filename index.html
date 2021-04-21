@@ -27,13 +27,13 @@
     <div class="wrapper">
         <!-- bar fixed top -->
         <div class="bar_fixed_top">
-            <button class="btn">
+            <button class="button_bar_fixed">
                 Effettua l'upgrade
             </button>
         </div>
         
         <!-- bar fixed top -->
-        <!-- container aside main -->
+        <!-- container flex aside - main -->
         <div class="container_aside_main">
             <!-- aside -->
             <aside>
@@ -56,7 +56,7 @@
                     <ul class="aside_list_top">
                         <li class="border-left">
                             <img src="img/home.svg" alt="home" id="home"> 
-                            <a href="" id="active">
+                            <a href="" id="icon_active">
                                 Home
                             </a>  
                         </li>
@@ -90,7 +90,6 @@
 
                     <!-- aside bottom -->
                     <ul class="ul_scroll">
-
                         <li>
                             Nome Playlist
                         </li>
@@ -112,11 +111,10 @@
                         <li>
                             Nome Playlist
                         </li>
-                
                     </ul>
                     <!-- /aside bottom -->
 
-                    <!-- aside install app -->
+                    <!-- aside bottom install app -->
                     <div class="aside_block_bottom">
                         <div class="container_bottom_aside">
                             <img src="img/download.svg" alt="download" class="download"> 
@@ -128,13 +126,14 @@
                         <hr>
                     
                         <div class="container_bottom_aside">
+                                
                                 <img src="img/profile.svg" alt="profile" class="profile"> 
                                 <span> 
                                     John Doe 
                                 </span> 
                         </div>
                     </div>
-                   <!-- /aside install app --> 
+                   <!-- /aside bottom  install app --> 
                 </div>
                 <!-- /aside only lg_md_sm -->    
             </aside>
@@ -142,7 +141,7 @@
 
             <!-- main -->
             <main>
-                <!-- main list center-->
+                <!-- main list top center -->
                 <div class="main-top">
                     <ul class="list_top_main">
                         <li>
@@ -178,24 +177,32 @@
                         </li>
                     </ul>
                 </div>
-                <!-- /main list center-->
+                <!-- /main list top center-->
 
                 <!-- row 1 songs -->
-                <div class="intestation_row">
+                <div class="container_songs">
+                    <!-- intestation row -->
+                   
+                        <h2>
+                            Recently played
+                        </h2>
+              
+                    
+                    <!-- intestation row -->
 
-                    <h2>
-                        Recently played
-                    </h2>
-               
+                    <!-- main block songs-img-title -->
                     <div class="main_block">
+                        <!-- song 1/6 -->
                         <div class="song">
                             <div class="img-song">
-                                <img src="img/metal_lifting.jpg" alt="">
-                                
-                                <div class="overlay">
+                                <!-- layover -->
+                                <div class="layover-img-song">
                                     <i class="fas fa-play-circle circle-layover"></i>
-                                </div>  
+                                </div>
+                                <!-- layover -->
+                                <img src="img/metal_lifting.jpg" alt="">
                             </div>
+
                             <div class="title-song">
                                 <h4>
                                     Heavy Metal
@@ -204,13 +211,21 @@
                                     Subtitle
                                 </p>
                             </div>
+                           
+                           
                         </div>
+                        <!-- /song 1/6 -->
+
+                        <!-- song 2/6 -->
                         <div class="song">
                             <div class="img-song">
-                                <img src="img/stranger.jpeg" alt="">
-                                <div class="overlay">
+                                <!-- layover -->
+                                <div class="layover-img-song">
                                     <i class="fas fa-play-circle circle-layover"></i>
                                 </div>
+                                <!-- layover -->
+                                <img src="img/stranger.jpeg" alt="">
+                                
                             </div>
                             <div class="title-song">
                                 <h4>
@@ -221,13 +236,18 @@
                                 </p>
                             </div>
                         </div>
+                        <!-- song 2/6 -->
 
+                        <!-- song 3/6 -->
                         <div class="song">
                             <div class="img-song">
-                                <img src="img/aquietplace.jpeg" alt="">
-                                <div class="overlay">
+                                <!-- layover -->
+                                <div class="layover-img-song">
                                     <i class="fas fa-play-circle circle-layover"></i>
                                 </div>
+                                <!-- layover -->
+                                <img src="img/aquietplace.jpeg" alt="">
+                                
                             </div>
                             <div class="title-song">
                                 <h4>
@@ -238,13 +258,18 @@
                                 </p>
                             </div>
                         </div>
+                        <!-- song 3/6 -->
 
+                        <!-- song 4/6 -->
                         <div class="song">
                             <div class="img-song">
-                                <img src="img/split.jpeg" alt="">
-                                <div class="overlay">
+                                <!-- layover -->
+                                <div class="layover-img-song">
                                     <i class="fas fa-play-circle circle-layover"></i>
                                 </div>
+                                <!-- layover -->
+                                <img src="img/split.jpeg" alt="">
+                                
                             </div>
                             <div class="title-song">
                                 <h4>
@@ -255,13 +280,18 @@
                                 </p>
                             </div>
                         </div>
+                        <!-- song 4/6 -->
 
+                        <!-- song 5/6 -->
                         <div class="song">
                             <div class="img-song">
-                                <img src="img/cure.jpeg" alt="">
-                                <div class="overlay">
+                                <!-- layover -->
+                                <div class="layover-img-song">
                                     <i class="fas fa-play-circle circle-layover"></i>
                                 </div>
+                                <!-- layover -->
+                                <img src="img/cure.jpeg" alt="">
+                               
                             </div>
                             <div class="title-song">
                                 <h4>
@@ -272,13 +302,18 @@
                                 </p>
                             </div>
                         </div>
+                        <!-- song 5/6 -->
 
+                        <!-- song 6/6 -->
                         <div class="song">
                             <div class="img-song">
-                                <img src="img/sinister.jpeg" alt="">
-                                <div class="overlay">
+                                <!-- layover -->
+                                <div class="layover-img-song">
                                     <i class="fas fa-play-circle circle-layover"></i>
                                 </div>
+                                <!-- layover -->
+                                <img src="img/sinister.jpeg" alt="">
+                               
                             </div>
                             <div class="title-song">
                                 <h4>
@@ -289,29 +324,38 @@
                                 </p>
                             </div>
                         </div>
-                    </div>    
+                        <!-- song 6/6 -->
+                    </div>
+                    <!-- /main block songs-img-title -->    
                     
                     
                 </div>
                 <!-- row 1 songs -->
 
                 <!-- row 2 songs -->
-                <div class="intestation_row">
-                    <h2>
+                <div class="container_songs">
+                    <!-- intestation row 2 -->
+                    <h2  class="intestation_row">
                         Creato per John Doe
                     </h2>
                     <p class="subtitle">
                         Più ascoliti, più accurati saranno i suggerimenti
                     </p>
-                
-                
+                    <!-- intestation row 2 -->
+            
+                    
+                    <!-- main block songs-img-title -->   
                     <div class="main_block">
+                        <!-- song 1/2 -->
                         <div class="song">
                             <div class="img-song ">
-                                <img src="img/radar.jpeg" alt="">
-                                <div class="overlay">
+                                <!-- layover -->
+                                <div class="layover-img-song">
                                     <i class="fas fa-play-circle circle-layover"></i>
                                 </div>
+                                <!-- layover -->
+                                <img src="img/radar.jpeg" alt="">
+                               
                             </div>
                             <div class="title-song">
                                 <h4>
@@ -320,41 +364,50 @@
                             
                             </div>
                         </div>
+                        <!-- /song 1/2 -->
 
+                        <!-- song 2/2 -->
                         <div class="song">
                             <div class="img-song">
-                                <img src="img/mixdaily.jpeg" alt="">
-                                <div class="overlay">
+                                <!-- layover -->
+                                <div class="layover-img-song">
                                     <i class="fas fa-play-circle circle-layover"></i>
                                 </div>
+                                <!-- layover -->
+                                <img src="img/mixdaily.jpeg" alt="">
+                                
                             </div>
                             <div class="title-song">
                                 <h4>
                                     Daily  Mix 
                                 </h4>
                             </div>
-                        </div>   
+                        </div>
+                        <!-- /song 2/2 -->   
                     </div>
+                    <!-- /main block songs-img-title -->   
                 </div>
                 <!-- /row 2 songs -->
 
                 <!-- row 3 songs -->   
-                <div class="intestation_row">
-                    <h2>
+                <div class="container_songs">
+                    <h2  class="intestation_row">
                         Artisti più popolari
                     </h2>
                     <p class="subtitle">
                         Più ascolti più accurati saranno i suggerimenti
                     </p>
                 
-            
+                    <!-- main block songs-img-title -->  
                     <div class="main_block">
+                        <!-- song 1/2 -->
                         <div class="song">
-                            <div class="img-song">
-                                <img src="img/youg.jpeg" alt="Youg" class="border-radius">
-                                <div class="overlay-border-radius">
+                            <div class="img-song border-radius">
+                                <div class="layover-img-song">
                                     <i class="fas fa-play-circle circle-layover"></i>
                                 </div>
+                                <img src="img/youg.jpeg" alt="Youg">
+                               
                             </div>
                             <div class="title-song">
                                 <h4>
@@ -362,15 +415,17 @@
                                 </h4>
                             
                             </div>
-                        
                         </div>
+                        <!-- song 1/2 -->
 
+                        <!-- song 2/2 -->
                         <div class="song">
-                            <div class="img-song" >
-                                <img src="img/einaudi.jpeg" alt="Einaudi" class="border-radius">
-                                <div class="overlay-border-radius">
+                            <div class="img-song border-radius" >
+                                <div class="layover-img-song">
                                     <i class="fas fa-play-circle circle-layover"></i>
                                 </div>
+                                <img src="img/einaudi.jpeg" alt="Einaudi">
+                                
                             </div>
 
                             <div class="title-song">
@@ -378,21 +433,23 @@
                                     Ludovico Einaudi
                                 </h4>
                             </div>
-
                         </div>
-                    
+                        <!-- /song 2/2 -->
                     </div>
+                    <!-- /main block songs-img-title -->  
                 </div>
+                <!-- /row 3 songs --> 
             </main>
             <!-- /main -->
         </div>
-        <!-- container aside main -->
+        <!-- /container flex aside - main -->
 
         <!-- footer -->
         <footer>
 
             <!-- footer left -->
             <div class="footer_left">
+                <!-- mini img - title - song -->
                 <img src="img/sinister.jpeg" alt="sinister">
                 
                 <div class="title_song_footer">
@@ -403,17 +460,17 @@
                         Brano Nome
                     </div>
                 </div>
+                <!-- /mini img - title - song -->
                 <div class="icons">
                     <i class="far fa-heart"></i>
                     <i class="far fa-folder"></i>
                 </div>
-                
             </div>
             <!-- footer left -->
 
             <!-- footer center -->
             <div class="footer_center">
-            
+                <!-- icons player top -->
                 <div class="player_top">
                     <i class="fas fa-random"></i>
                     <i class="fas fa-step-backward"></i>
@@ -421,6 +478,8 @@
                     <i class="fas fa-step-forward"></i>
                     <i class="fas fa-redo"></i>
                 </div>
+                <!-- icons player top -->
+                <!-- bar - line progress song -->
                 <div class="player_bottom">
                     <span class="progress_song">
                         0:25
@@ -434,32 +493,31 @@
                     <span class="progress_song">
                         4:25
                     </span> 
-                   
                 </div>
-                
+                <!-- bar - line progress song -->
             </div>
             <!-- /footer center  -->
 
             <!-- footer right -->
             <div class="footer_right">
-
+                <!-- icons footer-right -->
                 <div class="icons">
                     <i class="fas fa-list"></i>
                     <i class="fas fa-desktop"></i>
                     <i class="fas fa-volume-up"></i>
-                   
                 </div>
+                <!-- icons footer-right -->
+                <!-- bar-volume -->
                 <div class="player_line">
                     <div class="player_line_progress">
                         <div class="circle">
-
                         </div>
                     </div>
                 </div>
-              
+                <!-- bar-volume -->
+                
             </div>
             <!-- /footer right -->
-
         </footer>
         <!-- /footer -->
     </div>

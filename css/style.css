@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
 }
-
 /* common */
 body {
     font-family: 'Montserrat', sans-serif;
@@ -20,7 +19,6 @@ h5 {
 hr {
     border-color:  #7c7e83; 
 }
-
 /* class generic */
 .border-radius {
     overflow: hidden;
@@ -34,9 +32,6 @@ hr {
     background-color: #a3a3a3;
     color: black;
 }
-
-
-
 /* bar fixed top */
 .bar_fixed_top {
     position: fixed;
@@ -65,7 +60,6 @@ hr {
     transition: 0.2s;
     transform: scale(1.1);
 }
-
 /* container */
 .wrapper {
     width: 100%;
@@ -82,7 +76,6 @@ hr {
     flex-direction: column;
     height: 100%;
 }
-
 /* /container */
 
 /* aside */
@@ -100,7 +93,6 @@ aside {
     color: white;
     background-color: black;
 }
-
 
 .aside_list_top a {
     padding-left: 5px;
@@ -206,7 +198,6 @@ aside ul li > img {
     color: #7c7e83;
 }
 
-
 .a_active {
     color: white;
 }
@@ -228,6 +219,7 @@ aside ul li > img {
 .list_top_main > li {
     padding: 15px;
 }
+
 .list_top_main > li > a:hover {
     color: white;
 }
@@ -256,7 +248,6 @@ aside .aside_list_middle a{
 .icons i:hover {
     color: white;
 }
-
 /* /list - link style, hover */
 
 /* content */
@@ -282,7 +273,7 @@ main {
     padding: 30px  0px;  
 }
 
- .song {
+.song {
     margin: 10px;  
 } 
 
@@ -318,7 +309,6 @@ main {
 .song img {
     width: 100%;
 }
-
 
 .title-song > h4 {
     font-size: 14px;

@@ -19,6 +19,12 @@ h5 {
 hr {
     border-color:  #7c7e83; 
 }
+
+img{
+    cursor: pointer;
+}
+
+
 /* class generic */
 .border-radius {
     overflow: hidden;
@@ -86,8 +92,6 @@ hr {
 
 aside {
     overflow-y: hidden;
-    display: flex;
-    flex-direction: column;
     height:100%;
     width: 230px;
     color: white;
@@ -98,7 +102,7 @@ aside {
     padding-left: 5px;
 }
 
-.aside_list_middle a,
+.aside_list_center a,
 .ul_scroll li {
     font-weight:600;
 }
@@ -131,8 +135,6 @@ aside h5 {
 }
 
 .aside_block_bottom {
-    display: flex;
-    flex-direction: column;
     padding: 20px 20px 0px 20px;
     margin-top: auto;
 }
@@ -172,21 +174,16 @@ aside ul li > img {
     font-weight: 600;
 }
 
-.aside_list_middle a {
+.aside_list_center a {
     display: flex;
     align-items: center; 
 }
 
-.aside_list_middle:hover a {
+.aside_list_center:hover a {
     color: white;
 }
-.aside_list_middle:hover i {
+.aside_list_center:hover i {
    background-color: white;
-}
-
-.aside_list_top li:hover {
-    border-left: 4px solid #fffb07;
-    transition: 0.2s ; 
 }
 
 .aside_list_top li a:hover {
@@ -209,7 +206,6 @@ aside ul li > img {
 
 .list_top_main {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     text-transform: uppercase;
@@ -240,7 +236,7 @@ aside ul li > img {
 
 .list_top_main a,
 aside li > a,
-aside .aside_list_middle a{
+aside .aside_list_center a{
     text-decoration: none;
     color: #7c7e83;
 }
@@ -421,7 +417,6 @@ i {
     align-items: center;
     justify-content: center;
     height: 60%;
-    
 }
 
 .player_line {
@@ -481,8 +476,32 @@ i {
 }
 /* /footer */
 
+
+/* scrollbar style */
+/* width */
+::-webkit-scrollbar {
+    width: 18px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: white; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #c8c8c8; 
+    border-radius: 10px;
+    border: 4px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+}
+
 /* xs */
 @media screen and (max-width:767px) {
+    ::-webkit-scrollbar {
+        width: 14px;
+    }
+
     .lg_md_sm {
         display: none;
     }
@@ -502,6 +521,13 @@ i {
     aside {
         width: 50px;
         transition: 0.7s;
+    }
+
+    img:hover:not(#logo){
+        border-radius:50%;
+        padding: 5px;
+        transition: 0.2s;
+        background-color: rgba(255, 255, 255, 0.1)
     }
 
     main {
@@ -581,7 +607,7 @@ i {
     }
     
     main {
-        padding: 100px 15px 0px 15px;
+        padding: 100px 0px 0px 0px;
     }
 
     .list_top_main li {
@@ -748,7 +774,7 @@ i {
     }
 
     .song { 
-        max-width: calc(100%/4 - 20px);
+        width: calc(100%/4 - 20px);
         transition: 0.2s;
     }
  
@@ -785,6 +811,7 @@ i {
 
     .song {
         width: calc(100%/6 - 20px);
+        transition: 0.2s;
         margin: 0px 10px;
     }
 }

@@ -118,6 +118,11 @@ aside h5 {
     color: white;
 }
 
+.aside_block_bottom {
+    padding: 20px 20px 0px 20px;
+    margin-top: auto;
+}
+
 .aside_block_bottom .profile {
     border-radius: 50%;
     height: 25px;
@@ -134,10 +139,6 @@ aside h5 {
     margin: 5px;
 }
 
-.aside_block_bottom {
-    padding: 20px 20px 0px 20px;
-    margin-top: auto;
-}
 .container_bottom_aside {
     display: flex;
     margin:10px;
@@ -346,7 +347,7 @@ i {
 .footer_left {
     display: flex;
     align-items: center;
-    width: 300px;
+    width: 230px;
     height: 100%; 
 } 
 
@@ -359,7 +360,6 @@ i {
 .footer_left > img {
     margin-left: 10px;
     width: 20%;
-    height: 50%;
 }
 
 .footer_left > .icons {
@@ -505,15 +505,18 @@ i {
     .lg_md_sm {
         display: none;
     }
-    .bar_fixed_top {
+    .bar_fixed_top{
         width: calc(100% - 50px);
         transition: 0.8s;
     }
 
     #only_xs {
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
     }
-    #only_xs img {
+    #only_xs > img {
         margin-top: 10px;
         width: 70%;
     }
@@ -523,7 +526,26 @@ i {
         transition: 0.7s;
     }
 
-    img:hover:not(#logo){
+    .aside_block_bottom {
+        padding: 0px;  
+    }
+
+    .container_bottom_aside {
+        display: inline-block;
+        text-align: center;
+        margin: 0;
+    }
+
+    .container_bottom_aside .download {
+        width: 30%;
+    }
+
+    .container_bottom_aside .profile {
+        margin-top: 10px;
+        width: 50%;
+    }
+    
+    img:hover:not(#logo, .aside_block_bottom img ){
         border-radius:50%;
         padding: 5px;
         transition: 0.2s;

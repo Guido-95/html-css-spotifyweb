@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- /font -->
+    
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <!-- /font awesome -->
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <!-- /favicon -->
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- /css -->
+    <title> Esercitazione Spotify </title>
+</head>
+<body>
+    <!-- wrapper container -->
+    <div class="wrapper">
+        <!-- bar fixed top -->
+        <div class="bar_fixed_top">
+            <button class="button_bar_fixed">
+                Effettua l'upgrade
+            </button>
+        </div>
+        
+        <!-- bar fixed top -->
+        <!-- container flex aside - main -->
+        <div class="container_aside_main">
+            <!-- aside -->
+            <aside>
+                <!-- aside only xs -->
+                <div id="only_xs">
+                    <img src="img/logo-small.svg" alt="">
+                    <img src="img/home.svg" alt="home">
+                    <img src="img/search.svg" alt="search">
+                    <img src="img/libreria.svg" alt="">
+
+                    <div class="aside_block_bottom">
+                        <div class="container_bottom_aside">
+                            <img src="img/download.svg" alt="download" class="download"> 
+                        </div>
+                        <div class="container_bottom_aside"> 
+                            <img src="img/profile.svg" alt="profile" class="profile"> 
+                        </div>
+                    </div>
+                </div>
+                <!-- aside only xs -->
+
+                <!-- aside only lg_md_sm -->
+                <div class="lg_md_sm">
+                    <!-- logo -->
+                    <img src="img/logo.svg" alt="Logo" id="logo">
+                    <!-- /logo -->
+
+                    <!-- aside list top -->
+                    <ul class="aside_list_top">
+                        <li class="border-left">
+                            <img src="img/home.svg" alt="home" id="home"> 
+                            <a href="" id="icon_active">
+                                Home
+                            </a>  
+                        </li>
+                        <li>
+                            <img src="img/search.svg" alt="search">
+                            <a href="">
+                                Cerca
+                            </a>   
+                        </li>
+                        <li>
+                            <img src="img/libreria.svg" alt="">
+                            <a href="">
+                                La tua libreria
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- aside list top -->
+                    
+                    <!-- aside center -->
+                    <div class="aside_list_center">
+                        <h5>
+                            Playlist
+                        </h5>
+
+                        <a href="">
+                            <i class="fas fa-plus"></i> 
+                            Crea playlist
+                        </a>
+                    </div>   
+                    <!-- aside center -->
+
+                    <!-- aside bottom -->
+                    <ul class="ul_scroll">
+                        <li>
+                            Nome Playlist
+                        </li>
+                        <li>
+                            Nome Playlist
+                        </li>
+                        <li>
+                            Nome Playlist
+                        </li>
+                        <li>
+                            Nome Playlist
+                        </li>
+                        <li>
+                            Nome Playlist
+                        </li>
+                        <li>
+                            Nome Playlist
+                        </li>
+                        <li>
+                            Nome Playlist
+                        </li>
+                    </ul>
+                    <!-- /aside bottom -->
+
+                    <!-- aside bottom install app -->
+                    <div class="aside_block_bottom">
+                        <div class="container_bottom_aside">
+                            <img src="img/download.svg" alt="download" class="download"> 
+                            <span class="app"> 
+                                Installa app 
+                            </span> 
+                        </div>
+                    
+                        <hr>
+                    
+                        <div class="container_bottom_aside">
+                                
+                                <img src="img/profile.svg" alt="profile" class="profile"> 
+                                <span> 
+                                    John Doe 
+                                </span> 
+                        </div>
+                    </div>
+                   <!-- /aside bottom  install app --> 
+                </div>
+                <!-- /aside only lg_md_sm -->    
+            </aside>
+            <!-- /aside -->
+
+            <!-- main -->
+            <main>
+                <!-- main list top -->
+                <div>
+                    <ul class="list_top_main">
+                        <li>
+                            <a href="" class="border-bottom">
+                                in evidenza
+                            </a>
+                        
+                        </li>
+                        <li>
+                            <a href="">
+                                podcast
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                classifiche
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                generi e mood
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                nuove uscite
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                scopri
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /main list top-->
+
+                <!-- row 1 songs -->
+                <div class="container_songs">
+                    <!-- intestation row -->
+                   
+                        <h2>
+                            Recently played
+                        </h2>
+              
+                    
+                    <!-- intestation row -->
+
+                    <!-- main block songs-img-title -->
+                    <div class="main_block">
+                        <!-- song 1/6 -->
+                        <div class="song">
+                            <div class="img-song">
+                                <!-- layover -->
+                                <div class="layover-img-song">
+                                    <i class="fas fa-play-circle circle-layover"></i>
+                                </div>
+                                <!-- /layover -->
+                                <img src="img/metal_lifting.jpg" alt="">
+                            </div>
+                            <!-- title -subtitle  song -->
+                            <div class="title-song">
+                                <h4>
+                                    Heavy Metal
+                                </h4>
+                                <p class="subtitle">
+                                    Subtitle
+                                </p>
+                            </div>
+                            <!-- /title -subtitle  song -->
+                           
+                        </div>
+                        <!-- /song 1/6 -->
+
+                        <!-- song 2/6 -->
+                        <div class="song">
+                            <div class="img-song">
+                                <!-- layover -->
+                                <div class="layover-img-song">
+                                    <i class="fas fa-play-circle circle-layover"></i>
+                                </div>
+                                <!-- /layover -->
+                                <img src="img/stranger.jpeg" alt="">
+                                
+                            </div>
+                            <!-- title - subtitle  song -->
+                            <div class="title-song">
+                                <h4>
+                                    Stranger Things, Vol. 1 (a Netflix Original Serie Soundtrack)
+                                </h4>
+                                <p class="subtitle">
+                                    Kyle Dixon 	&amp; Michael Stein
+                                </p>
+                            </div>
+                            <!-- /title -subtitle  song -->
+                        </div>
+                        <!-- song 2/6 -->
+
+                        <!-- song 3/6 -->
+                        <div class="song">
+                            <div class="img-song">
+                                <!-- layover -->
+                                <div class="layover-img-song">
+                                    <i class="fas fa-play-circle circle-layover"></i>
+                                </div>
+                                <!-- /layover -->
+                                <img src="img/aquietplace.jpeg" alt="">
+                            </div>
+                            <div class="title-song">
+                                <h4>
+                                    A quiet place
+                                </h4>
+                                <p class="subtitle">
+                                    Subtitle
+                                </p>
+                            </div>
+                        </div>
+                        <!-- song 3/6 -->
+
+                        <!-- song 4/6 -->
+                        <div class="song">
+                            <div class="img-song">
+                                <!-- layover -->
+                                <div class="layover-img-song">
+                                    <i class="fas fa-play-circle circle-layover"></i>
+                                </div>
+                                <!-- /layover -->
+                                <img src="img/split.jpeg" alt="">
+                                
+                            </div>
+                            <div class="title-song">
+                                <h4>
+                                    Split
+                                </h4>
+                                <p class="subtitle">
+                                    Subtitle
+                                </p>
+                            </div>
+                        </div>
+                        <!-- song 4/6 -->
+
+                        <!-- song 5/6 -->
+                        <div class="song">
+                            <div class="img-song">
+                                <!-- layover -->
+                                <div class="layover-img-song">
+                                    <i class="fas fa-play-circle circle-layover"></i>
+                                </div>
+                                <!-- /layover -->
+                                <img src="img/cure.jpeg" alt="">
+                               
+                            </div>
+                            <div class="title-song">
+                                <h4>
+                                    A cure for wellnes
+                                </h4>
+                                <p class="subtitle">
+                                    Subtitle
+                                </p>
+                            </div>
+                        </div>
+                        <!-- song 5/6 -->
+
+                        <!-- song 6/6 -->
+                        <div class="song">
+                            <div class="img-song">
+                                <!-- layover -->
+                                <div class="layover-img-song">
+                                    <i class="fas fa-play-circle circle-layover"></i>
+                                </div>
+                                <!-- /layover -->
+                                <img src="img/sinister.jpeg" alt="">
+                               
+                            </div>
+                            <div class="title-song">
+                                <h4>
+                                    Sinister
+                                </h4>
+                                <p class="subtitle">
+                                    Subtitle
+                                </p>
+                            </div>
+                        </div>
+                        <!-- song 6/6 -->
+                    </div>
+                    <!-- /main block songs-img-title -->    
+                    
+                    
+                </div>
+                <!-- row 1 songs -->
+
+                <!-- row 2 songs -->
+                <div class="container_songs">
+                    <!-- intestation row 2 -->
+                    <h2  class="intestation_row">
+                        Creato per John Doe
+                    </h2>
+                    <p class="subtitle">
+                        Più ascoliti, più accurati saranno i suggerimenti
+                    </p>
+                    <!-- intestation row 2 -->
+            
+                    
+                    <!-- main block songs-img-title -->   
+                    <div class="main_block">
+                        <!-- song 1/2 -->
+                        <div class="song">
+                            <div class="img-song ">
+                                <!-- layover -->
+                                <div class="layover-img-song">
+                                    <i class="fas fa-play-circle circle-layover"></i>
+                                </div>
+                                <!-- /layover -->
+                                <img src="img/radar.jpeg" alt="">
+                            </div>
+                            <!-- title-song-->
+                            <div class="title-song">
+                                <h4>
+                                    Release Radar
+                                </h4>
+                            </div>
+                            <!-- /title-song-->
+                        </div>
+                        <!-- /song 1/2 -->
+
+                        <!-- song 2/2 -->
+                        <div class="song">
+                            <div class="img-song">
+                                <!-- layover -->
+                                <div class="layover-img-song">
+                                    <i class="fas fa-play-circle circle-layover"></i>
+                                </div>
+                                <!-- /layover -->
+                                <img src="img/mixdaily.jpeg" alt="">
+                                
+                            </div>
+                            <!-- title-song-->
+                            <div class="title-song">
+                                <h4>
+                                    Daily  Mix 
+                                </h4>
+                            </div>
+                            <!-- /title-song-->
+                        </div>
+                        <!-- /song 2/2 -->   
+                    </div>
+                    <!-- /main block songs-img-title -->   
+                </div>
+                <!-- /row 2 songs -->
+
+                <!-- row 3 songs -->   
+                <div class="container_songs">
+                    <h2  class="intestation_row">
+                        Artisti più popolari
+                    </h2>
+                    <p class="subtitle">
+                        Più ascolti più accurati saranno i suggerimenti
+                    </p>
+                
+                    <!-- main block songs-img-title -->  
+                    <div class="main_block">
+                        <!-- song 1/2 -->
+                        <div class="song">
+                            <div class="img-song border-radius">
+                                <!-- layover -->
+                                <div class="layover-img-song">
+                                    <i class="fas fa-play-circle circle-layover"></i>
+                                </div>
+                                <!-- /layover -->
+                                <img src="img/youg.jpeg" alt="Youg">
+                               
+                            </div>
+                            <!-- title-song-->
+                            <div class="title-song">
+                                <h4>
+                                    Lana del Rey
+                                </h4>
+                            </div>
+                            <!-- /title-song-->
+                        </div>
+                        <!-- song 1/2 -->
+
+                        <!-- song 2/2 -->
+                        <div class="song">
+                            <div class="img-song border-radius" >
+                                <!-- layover -->
+                                <div class="layover-img-song">
+                                    <i class="fas fa-play-circle circle-layover"></i>
+                                </div>
+                                <!-- /layover -->
+                                <img src="img/einaudi.jpeg" alt="Einaudi">
+                                
+                            </div>
+                            <!-- title-song-->
+                            <div class="title-song">
+                                <h4>
+                                    Ludovico Einaudi
+                                </h4>
+                            </div>
+                            <!-- /title-song -->
+                        </div>
+                        <!-- /song 2/2 -->
+                    </div>
+                    <!-- /main block songs-img-title -->  
+                </div>
+                <!-- /row 3 songs --> 
+            </main>
+            <!-- /main -->
+        </div>
+        <!-- /container flex aside - main -->
+
+        <!-- footer -->
+        <footer>
+
+            <!-- footer left -->
+            <div class="footer_left">
+                <!-- mini img - title - song -->
+                <img src="img/sinister.jpeg" alt="sinister">
+                
+                <div class="title_song_footer">
+                    <div>
+                        Sinister
+                    </div>
+                    <div class="subtitle">
+                        Brano Nome
+                    </div>
+                </div>
+                <!-- /mini img - title - song -->
+                <div class="icons" id="icons_footer">
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-folder"></i>
+                </div>
+            </div>
+            <!-- footer left -->
+
+            <!-- footer center -->
+            <div class="footer_center">
+                <!-- icons player top -->
+                <div class="player_top">
+                    <i class="fas fa-random"></i>
+                    <i class="fas fa-step-backward"></i>
+                    <i class="far fa-play-circle play_icon"></i>
+                    <i class="fas fa-step-forward"></i>
+                    <i class="fas fa-redo"></i>
+                </div>
+                <!-- icons player top -->
+                <!-- bar - line progress song -->
+                <div class="player_bottom">
+                    <span class="progress_song">
+                        0:25
+                    </span> 
+                    <div class="player_line">
+                        <div class="player_line_progress">
+                            <div class="circle">
+                            </div>
+                        </div>
+                    </div>
+                    <span class="progress_song">
+                        4:25
+                    </span> 
+                </div>
+                <!-- bar - line progress song -->
+            </div>
+            <!-- /footer center  -->
+
+            <!-- footer right -->
+            <div class="footer_right">
+                <!-- icons footer-right -->
+                <div class="icons">
+                    <i class="fas fa-list list-icons"></i>
+                    <i class="fas fa-desktop"></i>
+                    <i class="fas fa-volume-up"></i>
+                </div>
+                <!-- icons footer-right -->
+                <!-- bar-volume -->
+                <div class="player_line">
+                    <div class="player_line_progress">
+                        <div class="circle">
+                        </div>
+                    </div>
+                </div>
+                <!-- bar-volume -->
+                
+            </div>
+            <!-- /footer right -->
+        </footer>
+        <!-- /footer -->
+    </div>
+    <!-- wrapper container -->
+  
+    
+</body>
+</html>

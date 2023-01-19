@@ -538,6 +538,7 @@ i {
     }
 
     .container_bottom_aside .profile {
+        display: none;
         margin-top: 10px;
         margin-bottom: 10px;
         /* width: 50%; */
@@ -621,6 +622,9 @@ i {
     .progress_song,
     .fa-random,
     .footer_left #icons_footer {
+        display: none;
+    }
+    .container_bottom_aside .profile{
         display: none;
     }
     /* bar top fixed */
